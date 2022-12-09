@@ -31,7 +31,7 @@ console.log(pets);
 console.log(
   "------------------------------------Esercizio 3------------------------------------"
 );
-pets.sort();
+pets.reverse();
 for (let i = 0; i < pets.length; i++) {
   console.log(pets[i]);
 }
