@@ -67,13 +67,13 @@ console.log(cars);
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-cars[3] = {
+cars.push({
   brand: "Audi",
   model: "A5",
   color: "black",
   trims: ["titanium", "st", "active"],
   licensePlate: 13,
-};
+});
 console.log(cars);
 
 for (let i = 0; i < cars.length; i++) {
@@ -122,6 +122,11 @@ while (index < numericArray.length) {
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
+
+/*
+
+primo metodo molto più macchinoso:
+
 const charactersArray = ["g", "n", "u", "z", "d"];
 const alf = [];
 
@@ -193,3 +198,55 @@ for (let i = 0; i < charactersArray.length; i++) {
   }
 }
 console.log(alf);
+
+
+Oppure:
+Secondo metodo con meno codice
+*/
+
+const charactersArray = ["g", "n", "u", "z", "d"];
+const alfabetoIta = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "z",
+];
+let alfabetNum = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  for (let i2 = 0; i2 < alfabetoIta.length; i2++)
+    switch (true) {
+      case alfabetoIta[i2] === charactersArray[i]:
+        alfabetNum.push(i2 + 1);
+    }
+}
+console.log(alfabetNum);
+
+/*      Questo algoritmo invece mette automaticamente in ordine di grandezza i numeri all interno dell array alfabetNum 
+
+for (let i = 0; i < alfabetoIta.length; i++) {
+  for (let i2 = 0; i2 < charactersArray.length; i2++)
+    switch (true) {
+      case alfabetoIta[i] === charactersArray[i2]:
+        alfabetNum.push(i + 1);
+    }
+}
+console.log(alfabetNum);
+*/
