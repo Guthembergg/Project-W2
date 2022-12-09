@@ -136,8 +136,9 @@ const numericArray = [
 
 let index = 0;
 while (index < numericArray.length) {
-  if (numericArray[index] <= 32) {
-    console.log(numericArray[index]);
+  console.log(numericArray[index]);
+  if (numericArray[index] === 32) {
+    break;
   }
   index++;
 }
