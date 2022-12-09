@@ -73,7 +73,9 @@ const cars = [
 ];
 
 for (let i = 0; i < cars.length; i++) {
-  cars[i].licensePlate = 10 + i;
+  let nlc = 101 + i;
+  nlcs = nlc.toString();
+  cars[i].licensePlate = "EW" + nlc + "AD";
 }
 console.log(cars);
 
@@ -89,7 +91,7 @@ cars.push({
   model: "A5",
   color: "black",
   trims: ["titanium", "st", "active"],
-  licensePlate: 13,
+  licensePlate: "EW104AD",
 });
 console.log(cars);
 
