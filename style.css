@@ -10,6 +10,9 @@
 .color-txt {
   color: #2a2a2a;
 }
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+}
 header {
   height: 10%;
   background-color: #222f3f;
@@ -38,6 +41,7 @@ div.shop {
   width: 90%;
   padding: 1%;
   background-color: #f56501;
+  font-weight: 600;
 }
 div.holiday {
   margin-left: 4%;
@@ -67,8 +71,8 @@ div.image {
   box-shadow: 7px 7px #b7afaf26;
 }
 .play:hover {
-  height: 505px;
-  width: 405px;
+  height: 502px;
+  width: 402px;
   box-shadow: 7px 7px #4846464a;
 }
 div.vr {
@@ -113,14 +117,12 @@ h1 {
   font-size: 35px;
   padding-top: 4%;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
   font-size: 17px;
   padding-top: 1%;
   padding-left: 1%;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
 }
 h5 {
@@ -128,7 +130,6 @@ h5 {
   padding-top: 1%;
   padding-left: 1%;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding-bottom: 1%;
 }
@@ -138,15 +139,12 @@ p {
   color: #39aab9;
   font-weight: 600;
   padding-left: 0.5%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 h3 {
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 h4 {
   font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
   padding-top: 2%;
   font-weight: 600;
 }
