@@ -1,3 +1,4 @@
+/* Ho realizzato la pagina per una risoluzione di 1920*1080 o inferiore*/
 .text-center {
   text-align: center;
 }
@@ -61,21 +62,21 @@ div.gift {
   width: 92%;
 }
 div.image {
-  margin-left: 10%;
+  margin-left: 5.5%;
   margin-top: 3%;
   margin-bottom: 1%;
   padding-bottom: 3%;
 }
 .play {
-  height: 500px;
-  width: 400px;
+  height: 440px;
+  width: 340px;
   margin-right: 4%;
   border-radius: 10px;
   box-shadow: 7px 7px #b7afaf26;
 }
 .play:hover {
-  height: 502px;
-  width: 402px;
+  height: 432px;
+  width: 332px;
   box-shadow: 7px 7px #4846464a;
 }
 div.vr {
